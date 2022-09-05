@@ -7,6 +7,7 @@ import {UncontrolledRating} from './Components/UncontrolledRating';
 import {Accordion} from './Components/Accordion';
 import {UncontrolledOnOff} from './Components/UncontrolledOnOff';
 import {Select} from './Components/Select';
+import {Clock} from './Components/Clock/Clock';
 
 function App() {
     let [ratingValue, setRatingValue] = useState<RatingValueType>(0)
@@ -33,6 +34,7 @@ function App() {
                        items={[]}
                        onClick={()=>{}}
             />
+            <Clock/>
             {/*<Select value={2}*/}
             {/*        onChange={action('Value changed')}*/}
             {/*        items={value: '1', title: 'Minsk'}/>*/}
